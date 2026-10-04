@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBA.URBAN - Inicio</title>
+    <link rel="stylesheet" href="recursos/estilos/estilos.css">
+</head>
+<body>
+
+    <header class="encabezado-principal">
+        <a href="./index.html" class="logo-enlace">
+            <img src="recursos/imagenes/Untitled design.png" alt="Logo de CBA URBAN" class="logo-img">
+        </a>
+        <nav class="navegacion-principal" aria-label="Navegación principal">
+            <ul class="nav-lista">
+                <li><a href="./index.html" class="nav-enlace">Inicio</a></li>
+                <li><a href="./catalogo.html" class="nav-enlace">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+
+        <!-- Sección de Bienvenida -->
+        <section class="seccion-inicio">
+            <h1>CBA.URBAN - Indumentaria Streetwear</h1>
+            <p>Especialistas en remeras oversize confeccionadas en 100% algodón peinado.</p>
+            <a href="./catalogo.html" class="enlace-catalogo">Explorar catálogo completo</a>
+        </section>
+
+        <!-- Novedades / Destacados -->
+        <section class="seccion-destacados">
+            <h2>Lanzamientos Destacados</h2>
+
+            <article class="tarjeta-destacada">
+                <h3>Remera Oversize ZARA</h3>
+                <p>100% algodón peinado. Corte amplio y estructurado.</p>
+                <p>Precio: $25.000</p>
+                <a href="./catalogo.html#remera-zara" class="enlace-producto">Ver en catálogo</a>
+            </article>
+
+            <article class="tarjeta-destacada">
+                <h3>Remera Oversize TUSSY</h3>
+                <p>100% algodón peinado de alta densidad.</p>
+                <p>Precio: $27.000</p>
+                <a href="./catalogo.html#remera-tussy" class="enlace-producto">Ver en catálogo</a>
+            </article>
+
+            <article class="tarjeta-destacada">
+                <h3>Remera Oversize LIGHT</h3>
+                <p>100% algodón peinado en tono claro de temporada.</p>
+                <p>Precio: $30.000</p>
+                <a href="./catalogo.html#remera-light" class="enlace-producto">Ver en catálogo</a>
+            </article>
+        </section>
+
+        <!-- Demostración Técnica Requerida (box-sizing) -->
+        <section class="seccion-demostracion">
+            <h2>Demostración Técnica: Modelo de Caja en CSS</h2>
+            <p>Ambas cajas tienen el mismo width (280px), padding (20px) y borde (5px):</p>
+
+            <article class="caja-demostracion caja-content-box">
+                <header>
+                    <h3>1. box-sizing: content-box (Estándar)</h3>
+                </header>
+                <p>Suma el padding y borde por fuera del ancho declarado.</p>
+                <p><strong>Ancho total computado: 330px</strong></p>
+            </article>
+
+            <article class="caja-demostracion caja-border-box">
+                <header>
+                    <h3>2. box-sizing: border-box (Alternativo)</h3>
+                </header>
+                <p>Contiene el padding y borde dentro del ancho definido.</p>
+                <p><strong>Ancho total computado: 280px</strong></p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="pie-principal">
+        <ul class="pie-lista">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://maps.app.goo.gl/ZxZaRcUWUX6WTyNB6" target="_blank" rel="noopener noreferrer">Dirección</a></li>
+        </ul>
+        <p>&copy; 2026 CBA URBAN</p>
+    </footer>
+
+</body>
+</html>

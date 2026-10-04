@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Reseteo global (box-sizing no es heredable por defecto) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f5;
+    color: #18181b;
+    line-height: 1.5;
+}
+
+/* Encabezado y Navegación */
+.encabezado-principal {
+    background-color: #09090b;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    display: block;
+}
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.nav-enlace {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Estructura general */
+.contenido-principal {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.seccion-inicio,
+.seccion-destacados,
+.seccion-demostracion,
+.seccion-catalogo {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e4e4e7;
+}
+
+h1, h2 {
+    margin-bottom: 0.75rem;
+}
+
+.tarjeta-destacada,
+.tarjeta-producto {
+    border: 1px solid #e4e4e7;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.producto-img {
+    width: 100%;
+    max-width: 320px;      
+    height: 380px;         
+    object-fit: cover;      
+    object-position: center;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    display: block;
+}
+
+.producto-detalles {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+.enlace-catalogo,
+.enlace-producto {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-carrito {
+    background-color: #09090b;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+/* Demostración de modelo de caja */
+.caja-demostracion {
+    width: 280px;
+    padding: 20px;
+    border: 5px solid;
+    margin: 1rem 0;
+}
+
+.caja-content-box {
+    box-sizing: content-box;
+    border-color: #ef4444;
+    background-color: #fee2e2;
+}
+
+.caja-border-box {
+    box-sizing: border-box;
+    border-color: #10b981;
+    background-color: #d1fae5;
+}
+
+/* Pie de página */
+.pie-principal {
+    background-color: #09090b;
+    color: #a1a1aa;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.pie-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.pie-lista a {
+    color: #ffffff;
+    text-decoration: none;
+}
